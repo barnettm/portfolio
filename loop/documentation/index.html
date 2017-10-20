@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en" class="no-js"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en" class="no-js"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en" class="no-js"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+	<title>Documentation | Loop - Parallax HTML One-Page Template for Agency and Personal</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Loop - Parallax HTML One-Page Template for Agency and Personal">
+	<meta name="author" content="The Develovers">
+
+	<!-- CSS -->
+	<link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/shCore.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/shThemeDefault.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+	<div class="container">
+		<header>
+			<img src="assets/img/Loop-logo.png" alt="Loop Logo" /> <em>v1.2.1</em>
+			<h1>Loop Documentation</h1>
+		</header>
+		<div class="row main">
+			<div class="col-md-3">
+				<nav class="main-nav affix">
+					<ul class="list-unstyled">
+						<li><a href="#section1">Getting Started</a></li>
+						<li><a href="#section2">General</a></li>
+						<li><a href="#section3">Hero Unit</a></li>
+						<li><a href="#section4">Main Content</a></li>
+						<li><a href="#section5">Works</a></li>
+						<li><a href="#section6">Parallax</a></li>
+						<li><a href="#section7">Testimonial</a></li>
+						<li><a href="#section8">Map</a></li>
+						<li><a href="#section9">Contact Form (Personal)</a></li>
+						<li><a href="#section10">Twitter Stream</a></li>
+						<li><a href="#section11">Apply Skins</a></li>
+						<li><a href="#section12">Changelog</a></li>
+						<li><a href="#section13">Credits</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="col-md-9">
+				<!-- ####################### SECTION ####################### -->
+				<section id="section1">
+					<h2>Getting Started</h2>
+					<p>Thank you for purchasing Loop - Parallax HTML One-Page Template for Agency and Personal. This theme includes two templates that you can use for you or your client as required. Unlike the Agency type, Personal template has personality touch in term of design and content. By reading this documentation we hope you will get the most of its features. This template/theme is built with the latest Bootstrap 3 and Sass (with Compass). We recommend that you use Sass and Compass to customize the theme because it will be very easy since we have provided variables to change the color, font and others. If you have any questions that are beyond the scope of this help file, please feel free to contact us via email at <a href="mailto:support@themeineed.com">support@themeineed.com</a>. </p>
+					<h3>Directory Structure</h3>
+					After unzipping the downloaded file, you will get files structured as below:
+					<ul>
+						<li><code>documentation/</code>: where this documentation is placed</li>
+						<li><code>themes/</code>: theme files, includes
+							<ul>
+								<li><code>agency/</code>: this template is intended for agency purposes.</li>
+								<li><code>personal/</code>: this template is intended for personal purposes.</li>
+							</ul>
+						</li>
+					</ul>
+					<p>For both themes, the javascript files includes jQuery and the plugins are located at <code>assets/js/</code>. The main Javascript files used to initialize and configure the plugins are <code>loop.js</code>. So if you want to make some changes or additional codes, it should be at <code>loop.js</code></p>
+					
+				</section>
+				<!-- ####################### END SECTION ####################### -->
+
+				<!-- ####################### SECTION ####################### -->
+				<section>
+					<h2 id="section2">General</h2>
+					<h3>Google Fonts</h3>
+					<p>Google font used in this theme are <strong>Dosis and Open Sans</strong>. You can find the code on the <code>head</code> of each html files.</p>
+					<h3>Icon Fonts</h3>
+					<p>Most of the icons used are Font Awesome (<a href="http://fortawesome.github.io/Font-Awesome/icons/">http://fortawesome.github.io/Font-Awesome/icons/</a>), but however we also use brankic icon like what we use in "Services" section. The font files are located at <code>assets/fonts</code>. So if you want to update Font Awesome icon, just replace the existing files.</p>
+					<h3>Favicon</h3>
+					<p>Replace all the favicons at <code>assets/ico</code> with corresponding size as provided on the demo. The number at file name, such as 57 means 57x57 pixels and so on. The <code>favicon.png</code> has dimension of 20x20 pixels.</p>
+					<h3>Logo</h3>
+					<p>Find the logo at <code>assets/img</code> directory named <code>loop-logo.png</code>. It also has white version logo <code>loop-logo-white.png</code> as the logo will change once adjusting navigation bar background. You can see the logo switch functions at <code>loop.js</code> as below.</p>
+
+					<h4>For Agency Templates</h4>
+					<script type="syntaxhighlighter" class="brush: js">
+					<![CDATA[
+						// navbar and logo switch related with screen width
+						function toggleNavbar() {
+							if( ($(window).width() > 1024) && ($(document).scrollTop() <= 150) ) {
+								$(".navbar").removeClass("navbar-light");
+								
+								// set back to logo white if the origin is white logo
+								if( $('.logo-light').length > 0 ) {
+									$('.navbar-brand img').attr('src', 'assets/img/loop-logo-white.png');
+								}
+								
+							} else {
+								$(".navbar").addClass("navbar-light");
+								$('.navbar-brand img').attr('src', 'assets/img/loop-logo.png');
+							}
+						}
+					]]>
+					</script>
+
+					<h4>For Personal Templates</h4>
+					<script type="syntaxhighlighter" class="brush: js">
+					<![CDATA[
+						function setNavbarLight() {
+							$('.navbar').addClass('navbar-light');
+							$('.navbar-brand img').attr('src', 'assets/img/loop-logo.png');
+						}
+
+						function setNavbarTransparent() {
+							$('.navbar').removeClass('navbar-light');
+							$('.navbar-brand img').attr('src', 'assets/img/loop-logo-white.png');
+						}
+					]]>
+					</script>
+
+					<h3>Navigation</h3>
+					<p>Find the navigation menu by finding <code>id="main-nav"</code>, as you can see the hyperlink is pointed to the id of each content section such as <code>#about</code> to About section (<code>id="about"</code>) and so on. The <code>main-nav</code> is very important for scrollspy to work, the active menu item will be determined by scrollspy as you scroll the page. The init code is located at <code>loop.js</code> as below.</p>
+					<script type="syntaxhighlighter" class="brush: js">
+					<![CDATA[
+							// init scrollspy except on Opera, it doesn't work because body has 100% height
+							if ( !navigator.userAgent.match("Opera/") ) {
+								$('body').scrollspy({
+									target: '#main-nav'
+								});
+							}else {
+								$('#main-nav .nav li').removeClass('active');
+							}
+					]]>
+					</script>
+					<p>We exclude Opera from scrollspy since it conflicts with full-screen background which need body on 100% height.</p>
+					<h3>Footer</h3>
+					<p>Footer includes copyright text and social icon list on Agency theme. If you don't want tooltip on each social icon please remove <code>data-placement</code> and <code>data-toggle</code> from the hyperlink tag. Please refer to <a href="http://fortawesome.github.io/Font-Awesome/icons/">http://fortawesome.github.io/Font-Awesome/icons/</a> for complete list of available social icons.</p>
+
+					<h3>Page Without Preloader</h3>
+					<p>Although you can create page without preloader based on demo file provided, you should notice that there's special class at the <code>body</code> for this kind of page.</p>
+					<script type="syntaxhighlighter" class="brush: html">
+					<![CDATA[
+							
+							...
+
+							<body id="top" class="no-preloader"> ... </body>
+
+							...
+					]]>
+					</script>
+					
+				</section>
+				<!-- ####################### END SECTION ####################### -->
+
+				<!-- ####################### SECTION ####################### -->
+				<section>
+					<h2 id="section3">Hero Unit</h2>
+					<h3>Slideshow</h3>
+					<p>One of hero unit available in this theme is slideshow. To change images and copy text, open <code>assets/js/loop.js</code> and find block of code below:</p>
+					<script type="syntaxhighlighter" class="brush: js">
+					<![CDATA[
+							if( $('.slideshow').length > 0 ) {
+								$.supersized({
+										
+									// Functionality		
+									autoplay: 1,				// Slideshow starts playing automatically
+									slide_interval: 3000,		// Length between transitions
+									transition: 1, 				// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+									transition_speed: 1000,		// Speed of transition				
+																			   										   
+									// Components							
+									slide_links: 'blank',		// Individual links for each slide (Options: false, 'num', 'name', 'blank')
+									thumb_links: 0,				// Individual thumb links for each slide
+									slides:  	[				// Slideshow Images
+													{image : 'assets/img/sliders/slider1.png', title : '<div class="hero-text"><h2 class="hero-heading">HANDCRAFTED</h2><p>Built to provide great visitor experience</p></div>', thumb : '', url : ''},
+													{image : 'assets/img/sliders/slider2.png', title : '<div class="hero-text"><h2 class="hero-heading">PARALLAX</h2><p>Scrolling the page is fun with parallax background</p></div>', thumb : '', url : ''},
+													{image : 'assets/img/sliders/slider3.png', title : '<div class="hero-text"><h2 class="hero-heading">BUY ONE FOR TWO</h2><p>Buy one to get both of the agency and personal theme</p></div>', thumb : '', url : ''}  
+												],
+								});
+
+								$(".fa-pause, .fa-play").click( function(){
+									$(this).toggleClass("fa-pause fa-play");
+								});	
+							}
+					]]>
+					</script>
+					
+					<p>Note that parameter <code>slides</code> hold three data objects, each with <code>image</code>, <code>title</code>, <code>thumb</code> and <code>url</code>. But for this case, we only need to provide <code>image</code> and <code>title</code>. Put your images with the same directory as above to ease file management. For the best result, provide image with <strong>1920x1080 pixels</strong> but always remember to keep the size small. Then provide your copy text but <strong>be careful not to break the html tag</strong>.</p>
+					
+					<h3>Text Looper (Personal)</h3>
+					<p>As seen on Personal theme, <code>personal/index-image.html</code> the text looper is provided as animated items. To change this, please find the code as below.</p>
+					<script type="syntaxhighlighter" class="brush: html">
+					<![CDATA[
+						<div data-looper="go" data-interval="3000" class="looper slide down">
+							<div class="looper-inner">
+								<div class="item animated"><p>A WEB DESIGNER</p></div>
+								<div class="item animated"><p>A GADGET ENTHUSIAST</p></div>
+								<div class="item animated"><p>A COFFEE ADDICT</p></div>
+								<div class="item animated"><p>A FOOD LOVER</p></div>
+							</div>
+						</div>
+					]]>
+					</script>
+
+					<p>You can add/remove/change the item text and also change the looping interval.</p>
+
+					<h3>Video Background</h3>
+					<p>This theme use <a href="http://vodkabears.github.io/vide/">Vide</a> plugin to create video background. Below is the example how to initialize video background in the theme.</p>
+					<script type="syntaxhighlighter" class="brush: html">
+					<![CDATA[
+						<!-- HERO UNIT -->
+						<div id="hero-unit" class="hero-unit hero-light hero-video" data-vide-bg="assets/videos/motion" data-vide-options="loop: false, posterType: png" >
+							<div class="hero-content text-center">
+								<div id="slidecaption" class="slide-caption">
+									<div class="hero-text">
+										<h2 class="hero-heading">VIDEO BACKGROUND</h2>
+										<p>HTML5 Video background with fallback support</p>
+									</div>
+								</div>
+								<div class="hero-buttons">
+									<a href="#about" id="btn-about" class="btn btn-info btn-lg"><i class="fa fa-arrow-circle-o-down"></i> READ MORE</a>
+									<a href="#contact" id="btn-contact" class="btn btn-primary btn-lg"><i class="fa fa-phone-square"></i> GET IN TOUCH</a>
+								</div>
+							</div>
+							<div class="hero-bg-pattern"></div>
+						</div>
+						<!-- END HERO UNIT -->
+					]]>
+					</script>
+
+					<p>First prepare 3 video files in .mp4, .ogv and .webm format and make sure they have same name, also the image poster with the same name. In this theme, you will find them at <code>assets/videos/</code> directory and has files as below:</p>
+					<ul>
+						<li>motion.mp4</li>
+						<li>motion.ogv</li>
+						<li>motion.webm</li>
+						<li>motion.png</li>
+					</ul>
+
+					<p>To initialize the plugin, provide values for <code>data-vide-*</code> attributes as code snippet above, you can also provide the other options as documented here <a href="https://github.com/VodkaBears/Vide#readme">https://github.com/VodkaBears/Vide#readme</a>.</p>
+
+				</section>
+				<!-- ####################### END SECTION ####################### -->
+
+				<!-- ####################### SECTION ####################### -->
+				<section>
+					<h2 id="section4">Main Content</h2>
+					<p>This section will show you specific information about main content of the site.</p>
+					<h3>About Us</h3>
+					<p>On the Agency theme you will find image placed on the left at "About Us" section. Please see below</p>
+					<script type="syntaxhighlighter" class="brush: html">
+					<![CDATA[
+						<!-- ABOUT -->
+						<div id="about" class="section about">
+							<div class="container">
+								<div class="section-heading">
+									<h2>ABOUT US</h2>
+									<p>A great beginning to know us more</p>
+									<hr />
+								</div>
+								<div class="section-content">
+									<div class="row">
+										<img src="assets/img/about-img.png" alt="About Us" class="img-left" />
+										<div class="col-lg-9 col-lg-offset-3">
+											<h3>Dont Wait Until Tomorrow</h3>
+											<p>some text...</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- END ABOUT -->
+					]]>
+					</script>
+
+					<p>To change the image, locate the <code>src</code> at <code>img</code> tag above and replace with your file. You may need to change the placement of the image, to do this please open <code>assets/css/main.css</code> and find ".about .img-left". You can adjust the <code>bottom</code> and <code>left</code> value and also the <code>left</code> when screen on max 1370px or as your preference.</p>
+					<p>If you use SASS, please open <code>sass/partials/_about.scss</code> and adjust the values.</p>
+					<p>If you want to change the left image and right text sizing please adjust the values of <code>class="col-lg-9 col-lg-offset-3"</code>. For example if you need smaller right area, you can change it to <code>class="col-lg-7 col-lg-offset-5"</code>, make sure the sum of the numbers is 12 to maintain Bootstrap 12-grid columns.</p>
+
+					<h3>Social Icons (Personal)</h3>
+					<p>On Personal theme, there's four social icons listed with animation. Please see code below</p>
+					<script type="syntaxhighlighter" class="brush: html">
+					<![CDATA[
+						<h2>Find me elsewhere in the web</h2>
+						<ul class="list-inline social-icon">
+							<li class="wow rollIn" data-wow-delay='0.3s'><a href="#" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+							<li class="wow rollIn" data-wow-delay='0.3s'><a href="#" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+							<li class="wow rollIn" data-wow-delay='0.3s'><a href="#" data-toggle="tooltip" data-placement="bottom" title="Dribbble"><i class="fa fa-dribbble"></i></a></li>
+							<li class="wow rollIn" data-wow-delay='0.3s'><a href="#" data-toggle="tooltip" data-placement="bottom" title="LinkedIn"><i class="fa fa-linkedin"></i></a></li>
+						</ul>
+					]]>
+					</script>
+
+					<p>You can add more social icons but in my opinion, just place the most important ones. Each icon is animated using <code>rollIn</code> (rolling) animation effect, you can change the effect by changing the effect name. Please refer to <a href="http://daneden.github.io/animate.css/">http://daneden.github.io/animate.css/</a> for other effects.</p>
+
+					<h3>Skill Chart (Personal)</h3>
+					<p>Modify the skill chart in Personal theme by changing the percentage and skill name value as below</p>
+					<script type="syntaxhighlighter" class="brush: html">
+					<![CDATA[
+						<!-- SKILLS CHART -->
+						<div id="skills" class="section skills">
+							<div class="container">
+								<div class="row">
+									<div class="col-md-3 text-center">
+										<div class="chart" data-percent="92"><span class="percent">92%</span></div>
+										<span class="skill-name">Front-End Design</span>
+									</div>
+									<div class="col-md-3 text-center">
+										<div class="chart" data-percent="80"><span class="percent">80%</span></div>
+										<span class="skill-name">Web Design</span>
+									</div>
+									<div class="col-md-3 text-center">
+										<div class="chart" data-percent="75"><span class="percent">75%</span></div>
+										<span class="skill-name">WordPress</span>
+									</div>
+									<div class="col-md-3 text-center">
+										<div class="chart" data-percent="65"><span class="percent">65%</span></div>
+										<span class="skill-name">PHP</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- END SKILLS CHART -->
+					]]>
+					</script>
+					<p>Change the percentage value on <code>data-percent</code> attribute and also in the <code>span</code> tag. Change the skill name in the <code>span</code> tag with class="skill-name".</p>
+					<h3>Services</h3>
+					<p>This section uses brankic icons, please open <a href="brankic-icons/demo.html">brankic-icons/demo.html</a> to find icon css class reference.</p>
+					
+				</section>
+				<!-- ####################### END SECTION ####################### -->
+
+				<!-- ####################### SECTION ####################### -->
+				<section>
+					<h2 id="section5">Works</h2>
+					<p>This section shows filterable portfolio in gallery style powered by <a href="http://isotope.metafizzy.co/">Isotope</a> ($25 value). The filter is defined as below</p>					
+
+					<script type="syntaxhighlighter" class="brush: html">
+					<![CDATA[
+						<ul class="list-inline work-item-filters">
+							<li><a class="active" href="#" data-filter="*">ALL</a></li>
+							<li><a href="#" data-filter=".design">DESIGN</a></li>
+							<li><a href="#" data-filter=".photography">PHOTOGRAPHY</a></li>
+							<li><a href="#" data-filter=".ui">UI</a></li>
+							<li><a href="#" data-filter=".ux">UX</a></li>
+							<li><a href="#" data-filter=".video">VIDEO</a></li>
+						</ul>
+					]]>
+					</script>
+					<p>Provide <code>data-filter</code> attribute with class name to categorize the work item type and later become one of class defined for gallery item. Of course one gallery item can have more than one class, for example ".ui" and ".ux". Please see the simplified example below.</p>
+					<script type="syntaxhighlighter" class="brush: html">
+					<![CDATA[
+						<div class="work-item-wrapper">
+							<ul class="work-item-list list-col-4">
+								<li class="work-item design">
+									GalleryItem1
+								</li>
+								<li class="work-item ui ux">
+									GalleryItem2
+								</li>
+							</ul>
+						</div>
+					]]>
+					</script>
+					
+					
+					<p>The isotope filter class is defined after <code>work-item</code>, so GalleryItem1 only have one class as category i.e <code>design</code> whereas GalleryItem2 has two i.e <code>ui</code> and <code>ux</code></p>
+
+					<p>The above example has 4 columns, identified by <code>list-col-4</code> class. The gallery can have 2-5 columns, to change the column just use one of the available classes i.e <code>list-col-2</code>, <code>list-col-3</code> and so on.</p>
+					
+					<h3>Media Popup</h3>
+					<p>If you click the gallery item, you will see a popup (<a href="http://dimsemenov.com/plugins/magnific-popup/">Magnific Popup</a>) with original image size or video content. Please see code below.</p>
+
+					<script type="syntaxhighlighter" class="brush: html">
+					<![CDATA[
+						<img src="assets/img/portfolio/work1.jpg" alt="This is the description">
+						<div class="image-overlay">
+							<a href="assets/img/portfolio/work1-ori.jpg" class="media-popup" title="work title">
+								<div class="work-item-info">
+									<h3>Work Item Title</h3>
+									<p>Work item brief description</p>
+									<i class="fa fa-search-plus"></i>
+								</div>
+							</a>
+						</div>
+					]]>
+					</script>
+
+					<p><code>src</code> on <code>img</code> tag is a thumbnail image visible on gallery, meanwhile <code>href</code> on <code>a</code> tag is the original size of the image and will be opened via popup. Don't forget to add <code>alt</code> value, <code>media-popup</code> class and <code>title</code>.</p>
+					<p>The popup also can hold video content from YouTube or Vimeo, please see below</p>
+
+					<script type="syntaxhighlighter" class="brush: html">
+					<![CDATA[
+						<img src="assets/img/portfolio/work2.jpg" alt="Just paste the link and go">
+						<div class="image-overlay">
+							<a href="https://www.youtube.com/watch?v=ValQcoRwDic" class="mfp-iframe media-popup" title="Video Title">
+								<div class="work-item-info">
+									<h3>YouTube</h3>
+									<p>Just paste the link and go</p>
+									<i class="fa fa-search-plus"></i>
+								</div>
+							</a>
+						</div>
+					]]>
+					</script>
+
+					<p><code>src</code> on <code>img</code> tag is your image screenshot of the video, meanwhile <code>href</code> on <code>a</code> tag is link to the video. For video content, don't forget also to add <code>mfp-iframe</code>.</p>
+					
+				</section>
+				<!-- ####################### END SECTION ####################### -->
+
+				<!-- ####################### SECTION ####################### -->
+				<section>
+					<h2 id="section6">Parallax</h2>
+					<p>This theme has parallax feature placed on one of the section content. We will see this on testimonial section, with simplified code as below.</p>
+					
+					<script type="syntaxhighlighter" class="brush: html">
+					<![CDATA[
+
+						<div id="testimonial" class="section testimonial parallax">
+							<div class="container">
+								<div class="flexslider">
+									<ul class="slides">
+										<li>
+											testimonial content 1...
+										</li>
+										<li>
+											testimonial content 2...
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					]]>
+					</script>
+
+					<p>To change the background image, please open <code>assets/css/main.css</code> (for SASS user, please open <code>sass/_testimonial.scss</code>) and find ".testimonial", then change <code>background-image</code> value with your image. The demo use image with 1280x800 pixels. </p>
+					
+					<p>Section with parallax feature is identified by <code>parallax</code> class and the initiazation in Javascript as below.</p>
+					<script type="syntaxhighlighter" class="brush: js">
+					<![CDATA[
+						
+						// .parallax(xPosition, speedFactor, outerHeight) options:
+						// xPosition - Horizontal position of the element
+						// inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
+						// outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
+
+						$("#testimonial").parallax(0, 0.1);	
+					]]>
+					</script>					
+					
+				</section>
+				<!-- ####################### END SECTION ####################### -->
+
+				<!-- ####################### SECTION ####################### -->
+				<section>
+					<h2 id="section7">Testimonial</h2>
+					<p>Testimonial section use slider by <a href="http://flexslider.woothemes.com/">Flexslider</a>, check the sample code below.</p>					
+					
+					<script type="syntaxhighlighter" class="brush: html">
+					<![CDATA[
+						<div class="flexslider">
+							<ul class="slides">
+								<li>
+									testimonial item 1
+								</li>
+								<li>
+									testimonial item 2
+								</li>
+							</ul>
+						</div>
+					]]>
+					</script>
+
+					<p>The use of flexslider is identified by <code>flexslider</code> and <code>slides</code> class. Then initialization in Javascript as below</p>
+					
+					<script type="syntaxhighlighter" class="brush: js">
+					<![CDATA[
+						$('.flexslider').flexslider({
+							slideshowSpeed: 4000,
+							directionNav: false,
+							pauseOnAction: false
+						});
+					]]>
+					</script>
+
+					<p>You can change the speed of slideshow in <code>slideshowSpeed</code> value, for more detailed documentation please visit <a href="http://www.woothemes.com/flexslider/">http://www.woothemes.com/flexslider/</a></p>
+				
+				</section>
+				<!-- ####################### END SECTION ####################### -->
+
+				<!-- ####################### SECTION ####################### -->
+				<section>
+					<h2 id="section8">Map</h2>
+					<p>Using Google Map requires you to get the API key, please follow the guide <a href="https://developers.google.com/maps/documentation/javascript/tutorial#api_key">https://developers.google.com/maps/documentation/javascript/tutorial#api_key</a>. Once you get the API Key, please open <code>assets/js/google-map.js</code> and find function <code>loadScript</code> as below.</p>
+					<script type="syntaxhighlighter" class="brush: js">
+					<![CDATA[
+						function loadScript() {
+							var script = document.createElement('script');
+							script.type = 'text/javascript';
+							script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBbJ16uUP1tqA_-qsojvMCBV12V71rukHA&sensor=true&' +
+							    'callback=initialize';
+							document.body.appendChild(script);
+						}
+					]]>
+					</script>
+
+					<p>On the code above, the key is <code>AIzaSyBbJ16uUP1tqA_-qsojvMCBV12V71rukHA</code>, but it's recommended that you use your own API key. Just replace the demo key with yours, please make sure you don't miss even one character and avoid any space.</p>
+
+					<p>Then to change the map address, find function <code>codeAddress</code> as below</p>
+					<script type="syntaxhighlighter" class="brush: js">
+					<![CDATA[
+						function codeAddress() {
+		
+							var address = "Google New York, 76 Ninth Ave, New York, NY, USA";
+							geocoder.geocode( { 'address': address}, function(results, status) {
+								if (status == google.maps.GeocoderStatus.OK) {
+									map.setCenter(results[0].geometry.location);
+									var image = new google.maps.MarkerImage("assets/img/location-pin.png", null, null, null, new google.maps.Size(32, 32));
+									var beachMarker = new google.maps.Marker({
+										map: map,
+										icon: image,
+										position: results[0].geometry.location
+									});
+
+								} else {
+									alert('Geocode was not successful for the following reason: ' + status);
+								}
+							});
+						}
+					]]>
+					</script>
+
+					<p>Just change the <code>address</code> value with yours.</p>
+
+				</section>
+				<!-- ####################### END SECTION ####################### -->
+
+				<!-- ####################### SECTION ####################### -->
+				<section>
+					<h2 id="section9">Contact Form (Personal)</h2>
+					<p>In Personal theme, the contact form is working with AJAX call and later send an email once the visitor submitted the message. To change the destination email address please open <code>contact.php</code> and find <code>$emailTo</code> variable as below.</p>
+					<script type="syntaxhighlighter" class="brush: php">
+					<![CDATA[
+						$emailTo = 'youremail@domain.com';
+						$subject = 'New Submitted Message From: ' . $name;
+						$body = "Name: $name \n\nEmail: $email \n\nMessage: $message";
+						$headers = 'From: ' .' <'.$emailTo.'>' . "\r\n" . 'Reply-To: ' . $email;
+
+						mail($emailTo, $subject, $body, $headers);
+						
+						$message = 'Thank you ' . $name . ', your message has been submitted.';
+						$result = true;
+					]]>
+					</script>
+
+					<p>Provide your email address on <code>$emailTo</code> and actually you can change how the email content will look like by changing the <code>$subject</code> and <code>$body</code> value. Also you can change the success message for the visitor if the message has been sent by changing <code>$message</code> value.</p>
+				</section>
+				<!-- ####################### END SECTION ####################### -->
+
+				<!-- ####################### SECTION ####################### -->
+				<section>
+					<h2 id="section10">Twitter Stream</h2>
+					<p>To configure twitter stream setting, please open <code>assets/js/loop.js</code> and find "TWITTER STREAM".</p>
+					<script type="syntaxhighlighter" class="brush: js">
+					<![CDATA[
+							var configProfile = {
+								profile: { screenName: "thedevelovers" }, // provide your twitter username here
+								domId: "tweet",
+								maxTweets: 1,
+								enableLinks: true,
+								showUser: false,
+								showTime: false,
+								showImages: false,
+								showInteraction: false,
+								lang: "en"
+							};
+
+							twitterFetcher.fetch(configProfile);
+					]]>
+					</script>
+
+					<p>The most important is the plugin <strong>doesn't need twitter username, but it needs ID</strong>. Please follow above guide to get the ID</p>
+					
+				</section>
+				<!-- ####################### END SECTION ####################### -->
+
+				<!-- ####################### SECTION ####################### -->
+				<section>
+					<h2 id="section11">Apply Skins</h2>
+					<p>This theme has 10 predefined color skins where you can easily use to change the color of the theme. All skin files are located at <code>assets/css/skins/</code> directory. To apply skin, include it in your HTML page as below.</p>
+					<script type="syntaxhighlighter" class="brush: html">
+					<![CDATA[
+						<!DOCTYPE html>
+						<!--[if lt IE 7 ]><html class="ie ie6" lang="en" class="no-js"> <![endif]-->
+						<!--[if IE 7 ]><html class="ie ie7" lang="en" class="no-js"> <![endif]-->
+						<!--[if IE 8 ]><html class="ie ie8" lang="en" class="no-js"> <![endif]-->
+						<!--[if (gte IE 9)|!(IE)]><!--><html lang="en" class="no-js"> <!--<![endif]-->
+						<head>
+							<meta charset="utf-8">
+							<title>Loop | Parallax HTML One-Page Template for Agency and Personal</title>	
+							<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+							<meta name="description" content="Parallax HTML One-Page Template for Agency and Personal">
+							<meta name="author" content="The Develovers">
+
+							<!-- Styles -->	
+							<link href="assets/css/bootstrap.css" rel="stylesheet">
+							<link href="assets/css/font-awesome.min.css" rel="stylesheet">
+							<link href="assets/css/main.css" rel="stylesheet">
+							<!-- place your skin below main.css -->
+							<link href="assets/css/skins/green.css" rel="stylesheet">
+
+							...
+
+						</head>
+						<body>
+							...
+						</body>
+						</html>
+
+					]]>
+					</script>
+
+				</section>
+				<!-- ####################### END SECTION ####################### -->
+
+				<section class="doc-section">
+					<h2 id="section12">Changelog</h2>
+					<div class="well well-changelog">
+						<h3>Version 1.2.1, <small>October 15, 2017</small></h3>
+						<ul>
+							<li>FIXED smooth scrolling for navigation</li>
+							<li>FIXED Twitter fetcher</li>
+						</ul>
+						<h3>Version 1.2, <small>November 26, 2015</small></h3>
+						<ul>
+							<li>ADDED page without preloader</li>
+							<li>ADDED 10 color skins</li>
+							<li>ADDED slider with overlay and image hero unit with overlay</li>
+							<li>UPDATED Bootstrap to v3.3.5</li>
+							<li>UPDATED Font Awesome to v4.4.0</li>
+							<li>UPDATED work item, added play icon for video type</li>
+							<li>UPDATED documentation</li>
+							<li>IMPROVED work item, video type now can be clicked on whole thumbnail area</li>
+							<li>IMPROVED change secondary button at hero unit to outline button, make primary button more stand out</li>
+							<li>IMPROVED loader icon, scroll to top button, skill charts, remove outline at link item in Firefox, centering copyright text at all personal templates</li>
+						</ul>
+
+						<h3>Version 1.1.1, <small>January 18, 2015</small></h3>
+						<ul>
+							<li>Fixed top navigation (theme with video background) rendering problem in Chrome for Windows</li>
+							<li>Remove navigation item focus to avoid double bottom line in ScrollSpy function after clicking the menu and then scrolling to another content section.</li>
+							<li>Misc code cleaning</li>
+						</ul>
+
+						<h3>Version 1.1 <small>December 25, 2014</small></h3>
+						<ul>
+							<li>Update to Bootstrap 3.3.1</li>
+							<li>Update to Font Awesome 4.2.0</li>
+							<li>Update to Isotope 2.1.0</li>
+							<li>Re-organize plugins directory for better theme directory structure</li>
+							<li>Replace videoBG plugin with Vide v0.3.0 for video background</li>
+						</ul>
+
+						<h3>Version 1.0 <small>March 25, 2014</small></h3>
+						<ul>
+							<li>Initial release</li>
+						</ul>
+					</div>
+				</section>
+
+				<!-- ####################### SECTION ####################### -->
+				<section>
+					<h2 id="section13">Credits</h2>
+					<p>We would like to thank you for jQuery plugins, icons, fonts, images files used in this theme created by the fellow individual developer or team below: </p>
+					<ul>
+						<li>jQuery - <a href="http://jquery.com/">http://jquery.com/</a></li>
+						<li>Bootstrap - <a href="http://getbootstrap.com/">http://getbootstrap.com/</a></li>					
+						<li>easyPieChart - <a href="http://rendro.github.io/easy-pie-chart/">http://rendro.github.io/easy-pie-chart/</a></li>
+						<li>Parsley - <a href="http://parsleyjs.org/">http://parsleyjs.org/</a></li>
+						<li>jPreloader - <a href="http://www.inwebson.com/demo/jpreloader-v2/">http://www.inwebson.com/demo/jpreloader-v2/</a></li>
+						<li>Easing - <a href="http://gsgd.co.uk/sandbox/jquery/easing/">http://gsgd.co.uk/sandbox/jquery/easing/</a></li>
+						<li>Flexslider -  <a href="http://flexslider.woothemes.com/">http://flexslider.woothemes.com/</a></li>
+						<li>Isotope - <a href="http://isotope.metafizzy.co">http://isotope.metafizzy.co</a></li>
+						<li>jQuery ScrollTo and LocalScroll - <a href="http://flesler.blogspot.com/2007/10/jqueryscrollto.html">http://flesler.blogspot.com/2007/10/jqueryscrollto.html</a></li>
+						<li>Images - <a href="http://unsplash.com/">http://unsplash.com/</a></li>
+						<li>Magnific Popup - <a href="http://dimsemenov.com/plugins/magnific-popup/">http://dimsemenov.com/plugins/magnific-popup/</a></li>
+						<li>Parallax -  <a href="http://www.ianlunn.co.uk/plugins/jquery-parallax/">http://www.ianlunn.co.uk/plugins/jquery-parallax/</a></li>
+						<li>Vide - <a href="http://vodkabears.github.io/vide/">http://vodkabears.github.io/vide/</a></li>
+						<li>Looper - <a href="http://rygine.com/projects/looper.js">http://rygine.com/projects/looper.js</a></li>
+						<li>Supersized - <a href="www.buildinternet.com/project/supersized">www.buildinternet.com/project/supersized</a></li>
+						<li>Twitter Fetcher - <a href="http://www.jasonmayes.com/projects/twitterApi/">http://www.jasonmayes.com/projects/twitterApi/</a></li>
+						<li>WOW - <a href="http://mynameismatthieu.com/WOW/">http://mynameismatthieu.com/WOW/</a></li>
+						<li>Waypoints - <a href="https://github.com/imakewebthings/jquery-waypoints/">https://github.com/imakewebthings/jquery-waypoints/</a></li>						
+						<li>Font Awesome Icons - <a href="http://fortawesome.github.io/Font-Awesome/">http://fortawesome.github.io/Font-Awesome/</a></li>
+						<li>Brankic 1979 Icon - <a href="http://brankic1979.com/icons/">http://brankic1979.com/icons/</a></li>
+						<li>Glyphicons - <a href="http://glyphicons.com">http://glyphicons.com</a></li>
+						<li>Slider/Hero Unit, Parallax Background and Gallery Images - <a href="http://unsplash.com/">http://unsplash.com/</a></li>
+						<li>Team Images by Ivan McClellan Photography - <a href="http://www.flickr.com/photos/ivanmcclellan/">http://www.flickr.com/photos/ivanmcclellan/</a></li>
+						<li>Slider Images (Personal) - <a href="http://www.flickr.com/photos/ivanmcclellan/">http://www.flickr.com/photos/ivanmcclellan/</a>, <a href="http://www.flickr.com/photos/mr_t_in_dc/4237977211/">http://www.flickr.com/photos/mr_t_in_dc/4237977211/</a>, <a href="http://unsplash.com/">http://unsplash.com/</a></li>
+						<li>Video - Motion 02 <a href="http://vimeo.com/82905738">http://vimeo.com/82905738</a></li>
+					</ul>
+				</section>
+				<!-- ####################### END SECTION ####################### -->
+					
+			</div>
+		</div>
+
+		<footer>&copy; 2014. The Develovers</footer>
+	</div>
+
+	<script type="text/javascript" src="assets/js/shCore.js"></script>
+	<script type="text/javascript" src="assets/js/shBrushXml.js"></script>
+	<script type="text/javascript" src="assets/js/shBrushCss.js"></script>
+	<script type="text/javascript" src="assets/js/shBrushJScript.js"></script>
+	<script type="text/javascript" src="assets/js/shBrushPhp.js"></script>
+
+	<script type="text/javascript">
+		SyntaxHighlighter.all()
+	</script>
+
+</body>
+</html>

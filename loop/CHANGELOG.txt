@@ -1,0 +1,34 @@
+//************************//
+//	CHANGELOG
+//************************//
+
+Version 1.2.1, 15-10-2017
+- FIXED smooth scrolling for navigation
+- FIXED Twitter fetcher
+
+Version 1.2, 26-11-2015
+- ADDED page without preloader
+- ADDED 10 color skins
+- ADDED slider with overlay and image hero unit with overlay
+- UPDATED Bootstrap to v3.3.5
+- UPDATED Font Awesome to v4.4.0
+- UPDATED work item, added play icon for video type
+- UPDATED documentation
+- IMPROVED work item, video type now can be clicked on whole thumbnail area
+- IMPROVED change secondary button at hero unit to outline button, make primary button more stand out
+- IMPROVED loader icon, scroll to top button, skill charts, remove outline at link item in Firefox, centering copyright text at all personal templates
+
+Version 1.1.1, 18-01-2015
+- Fixed top navigation (theme with video background) rendering problem in Chrome for Windows
+- Remove navigation item focus to avoid double bottom line in ScrollSpy function after clicking the menu and then scrolling to another content section.
+- Misc code cleaning
+
+Version 1.1, 25-12-2014
+- Update to Bootstrap 3.3.1
+- Update to Font Awesome 4.2.0
+- Update to Isotope 2.1.0
+- Re-organize plugins directory for better theme directory structure
+- Replace videoBG plugin with Vide v0.3.0 for video background
+
+Version 1.0, 25-03-2014
+- initial release
