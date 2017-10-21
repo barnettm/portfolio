@@ -29,8 +29,8 @@
 
 	<!-- HTML5 shim, for IE6-8 support of HTML5 elements and IE Fallback-->
 	<!--[if lt IE 9]>
-	<script src="assets/js/html5shiv.js"></script>
-	<![endif]-->
+    <script src="assets/js/html5shiv.js"></script>
+    <![endif]-->
 
 	<!-- Fav and touch icons -->
 	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
@@ -40,7 +40,7 @@
 	<link rel="shortcut icon" href="assets/ico/favicon.png">
 
 </head>
-<body id="top">
+<body id="top" class="fullscreen-image-background">
 
 	<!-- NAVBAR -->
 	<div class="navbar navbar-fixed-top">
@@ -72,33 +72,28 @@
 
 	<!-- HERO UNIT -->
 	<div id="hero-unit" class="hero-unit">
-		<div class="slideshow">
-			<div class="hero-content text-right">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-8 col-lg-offset-4">
-							<div id="slidecaption" class="slide-caption"></div>
-							<div class="hero-buttons">
-								<a href="#about" id="btn-about" class="btn btn-outline btn-lg"><i class="fa fa-arrow-circle-o-down"></i> READ MORE</a>
-								<a href="#contact" id="btn-contact" class="btn btn-primary btn-lg"><i class="fa fa-phone-square"></i> GET IN TOUCH</a>
+		<div class="hero-content text-right">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-7 col-lg-offset-5">
+						<div id="slidecaption" class="slide-caption">
+							<div class="hero-text">
+								<!--<h2 class="hero-heading">MEET ME, <span class="name">MATT BARNETT</span></h2>-->
+								<h2 class="hero-heading"><span class="name">MATT BARNETT</span></h2>
+								<div data-looper="go" data-interval="3000" class="looper slide down">
+									<div class="looper-inner">
+										<div class="item animated"><p>A WEB DESIGNER</p></div>
+										<div class="item animated"><p>A GADGET ENTHUSIAST</p></div>
+										<div class="item animated"><p>A COFFEE ADDICT</p></div>
+										<div class="item animated"><p>A FOOD LOVER</p></div>
+									</div>
+								</div>
 							</div>
-						</div>	
-					</div>
-				</div>
-			</div>
-
-			<!-- Navigation -->
-			<div class="slide-navigation">
-				<a id="prevslide" class="load-item"><i class="fa fa-angle-left"></i></a>
-				<a id="nextslide" class="load-item"><i class="fa fa-angle-right"></i></a>
-				
-				<!-- Slide Pagination -->
-				<ul id="slide-list" class="list-inline"></ul>
-
-				<!-- Control Bar -->
-				<div id="controls-wrapper" class="load-item">
-					<div id="controls">
-						<a id="pauseplay"><i class="fa fa-pause"></i></a>
+						</div>
+						<div class="hero-buttons">
+							<a href="#about" id="btn-about" class="btn btn-outline btn-lg"><i class="fa fa-arrow-circle-o-down"></i> READ MORE</a>
+							<a href="#contact" id="btn-contact" class="btn btn-primary btn-lg"><i class="fa fa-phone-square"></i> GET IN TOUCH</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -113,7 +108,7 @@
 			<div class="container">
 				<div class="section-heading">
 					<h2>ABOUT ME</h2>
-					<p>A great start to know me</p>
+					<p>A great beginning to know me</p>
 					<hr />
 				</div>
 				<div class="section-content">
@@ -449,12 +444,11 @@
 	<script src="assets/js/plugins/isotope/imagesloaded.pkgd.js"></script>
 	<script src="assets/js/plugins/isotope/isotope.pkgd.min.js"></script>
 	<script src="assets/js/plugins/wow/wow.js"></script>
-	<script src="assets/js/plugins/magnific/jquery.magnific-popup.min.js"></script>
-	<script src="assets/js/plugins/supersized/supersized.3.2.7.min.js"></script>
-	<script src="assets/js/plugins/supersized/supersized.shutter.min.js"></script>
+	<script src="assets/js/plugins/waypoints/waypoints.min.js"></script>
 	<script src="assets/js/plugins/parsley/parsley.min.js"></script>
 	<script src="assets/js/plugins/easypiechart/jquery.easypiechart.min.js"></script>
-	<script src="assets/js/plugins/waypoints/waypoints.min.js"></script>
+	<script src="assets/js/plugins/magnific/jquery.magnific-popup.min.js"></script>
+	<script src="assets/js/plugins/looper/looper.min.js"></script>
 	<script src="assets/js/loop.js"></script>
 
 	<!-- DEMO PANEL -->
@@ -481,6 +475,6 @@
 		<iframe src="../demo-panel/index.php"></iframe>
 	</div>
 	<!-- END DEMO PANEL -->
-
+	
 </body>
 </html>
