@@ -1,10 +1,10 @@
-jQuery( function($){
+jQuery(function ($) {
 
 	/*----------------------/
 	/* PAGE LOADER
 	/*---------------------*/
 
-	if( $('body.no-preloader').length <= 0 ) {
+	if ($('body.no-preloader').length <= 0) {
 		$('body').jpreLoader({
 			showSplash: false,
 			loaderVPos: "50%"
@@ -15,21 +15,21 @@ jQuery( function($){
 	/*----------------------/
 	/* MAIN NAVIGATION
 	/*---------------------*/
-	
+
 	// navbar and logo switch related with scroll position
-	$(window).on('scroll', function(){
-		if( $(window).width() > 1024 ) {
-			if( $(document).scrollTop() > 150 ) {
+	$(window).on('scroll', function () {
+		if ($(window).width() > 1024) {
+			if ($(document).scrollTop() > 150) {
 				setNavbarLight();
-			}else {
+			} else {
 				setNavbarTransparent();
 			}
 		}
 	});
-	
+
 	// navbar and logo switch related with screen width
 	function toggleNavbar() {
-		if( ($(window).width() > 1024) && ($(document).scrollTop() <= 150) ) {
+		if (($(window).width() > 1024) && ($(document).scrollTop() <= 150)) {
 			setNavbarTransparent();
 		} else {
 			setNavbarLight();
@@ -38,8 +38,8 @@ jQuery( function($){
 
 	toggleNavbar();
 
-	$(window).resize( function() {
-		toggleNavbar();	
+	$(window).resize(function () {
+		toggleNavbar();
 	});
 
 	/* navbar setting functions */
@@ -54,13 +54,13 @@ jQuery( function($){
 	}
 
 	// hide collapsible menu
-	$('.navbar-nav li a').click( function() {
-		if($(this).parents('.navbar-collapse.collapse').hasClass('in')) {
+	$('.navbar-nav li a').click(function () {
+		if ($(this).parents('.navbar-collapse.collapse').hasClass('in')) {
 			$('#main-nav').collapse('hide');
 		}
 	});
 
-	$('#main-nav a, .hero-buttons a').on('click', function(e) {
+	$('#main-nav a, .hero-buttons a').on('click', function (e) {
 		e.preventDefault();
 
 		var target = $($(this).attr('href'));
@@ -75,9 +75,9 @@ jQuery( function($){
 	/* HERO UNIT SUPERSIZED
 	/*---------------------*/
 
-	if( $('.slideshow').length > 0 ) {
+	if ($('.slideshow').length > 0) {
 		$.supersized({
-				
+
 			// Functionality		
 			autoplay: 1,				// Slideshow starts playing automatically
 			slide_interval: 3000,		// Length between transitions
@@ -87,14 +87,14 @@ jQuery( function($){
 			// Components
 			slide_links: 'blank',		// Individual links for each slide (Options: false, 'num', 'name', 'blank')
 			thumb_links: 0,				// Individual thumb links for each slide
-			slides:  	[				// Slideshow Images
-							{image : 'assets/img/sliders/slider1.jpg', title : '<div class="hero-text"><h2 class="hero-heading">HANDCRAFTED</h2><p>Built to provide great visitor experience</p></div>', thumb : '', url : ''},
-							{image : 'assets/img/sliders/slider2.jpg', title : '<div class="hero-text"><h2 class="hero-heading">PARALLAX</h2><p>Scrolling the page is fun with parallax background</p></div>', thumb : '', url : ''},
-							{image : 'assets/img/sliders/slider3.jpg', title : '<div class="hero-text"><h2 class="hero-heading">BUY ONE FOR TWO</h2><p>Buy one to get both of the agency and personal theme</p></div>', thumb : '', url : ''}  
-						],
+			slides: [				// Slideshow Images
+				{ image: 'assets/img/sliders/slider1.jpg', title: '<div class="hero-text"><h2 class="hero-heading">HANDCRAFTED</h2><p>Built to provide great visitor experience</p></div>', thumb: '', url: '' },
+				{ image: 'assets/img/sliders/slider2.jpg', title: '<div class="hero-text"><h2 class="hero-heading">PARALLAX</h2><p>Scrolling the page is fun with parallax background</p></div>', thumb: '', url: '' },
+				{ image: 'assets/img/sliders/slider3.jpg', title: '<div class="hero-text"><h2 class="hero-heading">BUY ONE FOR TWO</h2><p>Buy one to get both of the agency and personal theme</p></div>', thumb: '', url: '' }
+			],
 		});
 
-		$(".fa-pause, .fa-play").click( function(){
+		$(".fa-pause, .fa-play").click(function () {
 			$(this).toggleClass("fa-pause fa-play");
 		});
 	}
@@ -107,14 +107,14 @@ jQuery( function($){
 	$('.full-width-parallax').parallax(0, 0.1);
 
 	function setParallax() {
-		if( $(window).width() > 1024 ) {
+		if ($(window).width() > 1024) {
 			$('.full-width-parallax').parallax(0, 0.1);
 		}
 	}
 
 	setParallax();
 
-	$(window).resize( function() {
+	$(window).resize(function () {
 		setParallax();
 	});
 
@@ -123,8 +123,8 @@ jQuery( function($){
 	/* SKILLS
 	/*---------------------*/
 
-	$('#skills').waypoint( function() {
-		$('.chart').each( function() {
+	$('#skills').waypoint(function () {
+		$('.chart').each(function () {
 			$(this).easyPieChart({
 				size: 150,
 				barColor: '#ffae3f',
@@ -136,9 +136,9 @@ jQuery( function($){
 			});
 		});
 	},
-	{
-		offset: '70%'
-	});
+		{
+			offset: '70%'
+		});
 
 
 	/*----------------------/
@@ -164,16 +164,16 @@ jQuery( function($){
 	/* SCROLL TO TOP
 	/*---------------------*/
 
-	if( $(window).width() > 992 ) {
-		$(window).scroll( function() {
-			if( $(this).scrollTop() > 300 ) {
+	if ($(window).width() > 992) {
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 300) {
 				$('.back-to-top').fadeIn();
 			} else {
 				$('.back-to-top').fadeOut();
 			}
 		});
 
-		$('.back-to-top').click( function(e) {
+		$('.back-to-top').click(function (e) {
 			e.preventDefault();
 
 			$('body, html').animate({
@@ -189,19 +189,19 @@ jQuery( function($){
 
 	var $container = $('.work-item-list');
 
-	new imagesLoaded( $container, function() {
+	new imagesLoaded($container, function () {
 		$container.isotope({
 			itemSelector: '.work-item'
 		});
 	});
 
 
-	$('.work-item-filters a').click( function(e) {
+	$('.work-item-filters a').click(function (e) {
 
 		var selector = $(this).attr('data-filter');
 		$container.isotope({
 			filter: selector
-		});		
+		});
 
 		$('.work-item-filters a').removeClass('active');
 		$(this).addClass('active');
@@ -214,7 +214,7 @@ jQuery( function($){
 	$('.media-popup').magnificPopup({
 		type: 'image',
 		callbacks: {
-			beforeOpen: function() {
+			beforeOpen: function () {
 
 				// modify item title to include description
 				currentItem = $(this.items)[this.index];
@@ -222,13 +222,13 @@ jQuery( function($){
 				currentItem.title = '<h3>' + originalTitle + '</h3>' + '<p>' + $(currentItem).parents('.work-item').find('img').attr('alt') + '</p>';
 
 				// adding animation
-				this.st.mainClass = 'mfp-fade'; 
+				this.st.mainClass = 'mfp-fade';
 			},
-			close: function() {
-				currentItem.title = originalTitle; 
+			close: function () {
+				currentItem.title = originalTitle;
 			}
 		}
-		
+
 	});
 
 
@@ -236,7 +236,7 @@ jQuery( function($){
 	/* SOCIAL NETWORK
 	/*---------------------*/
 
-	if( $(window).width() > 1024 ) {
+	if ($(window).width() > 1024) {
 		wow = new WOW({
 			animateClass: 'animated'
 		});
@@ -251,7 +251,7 @@ jQuery( function($){
 	/* TOOLTIP
 	/*---------------------*/
 
-	if( $(window).width() > 1024 ) {
+	if ($(window).width() > 1024) {
 		$('body').tooltip({
 			selector: "[data-toggle=tooltip]",
 			container: "body"
@@ -265,11 +265,11 @@ jQuery( function($){
 
 	$('#contact-form').parsley();
 
-	$('.contact-form form').submit( function(e) {
-		
+	$('.contact-form form').submit(function (e) {
+
 		e.preventDefault();
 
-		if( !$(this).parsley('isValid') )
+		if (!$(this).parsley('isValid'))
 			return;
 
 		$theForm = $(this);
@@ -280,34 +280,34 @@ jQuery( function($){
 		$btn.find('.loading-icon').addClass('fa-spinner fa-spin ');
 		$btn.prop('disabled', true).find('span').text("Sending...");
 
-		$.post('contact.php', $(this).serialize(), function(data){
-			
-			$message = data.message;
-			
-			if( data.result == true ){
-				$theForm.slideUp('medium', function() {
+		$.post('php_mailer/mail_handler.php', $(this).serialize(), function (data) {
+
+			$message = JSON.parse(data);
+
+			if ($message.success == true) {
+				$theForm.slideUp('medium', function () {
 					$alert.removeClass('alert-danger');
-					$alert.addClass('alert-success').html($message).slideDown('medium');
+					$alert.addClass('alert-success').html("Thank you. We will contact you soon").slideDown('medium');
 				});
-			}else {
-				$alert.addClass('alert-danger').html($message).slideDown('medium');
+			} else {
+				$alert.addClass('alert-danger').html("Please check your information and try again").slideDown('medium');
 			}
 
 			$btn.find('.loading-icon').removeClass('fa-spinner fa-spin ');
 			$btn.prop('disabled', false).find('span').text($btnText);
 
 		})
-		.fail(function() { console.log('AJAX Error'); });
+			.fail(function () { console.log('AJAX Error'); });
 
 	});
 
 
 	// init scrollspy except on Opera, it doesn't work because body has 100% height
-	if ( !navigator.userAgent.match("Opera/") ) {
+	if (!navigator.userAgent.match("Opera/")) {
 		$('body').scrollspy({
 			target: '#main-nav'
 		});
-	}else {
+	} else {
 		$('#main-nav .nav li').removeClass('active');
 	}
 

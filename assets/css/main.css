@@ -8,13 +8,15 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: 300;
-  color: #777;
+  /* color: #777; */
+  color: 
   background-color: #fff !important;
   line-height: 1.6;
 }
 body.fullscreen-image-background {
   /*background-image: url('../img/sliders/slider1.jpg?1394417052');*/
-  background-image: url('https://images.pexels.com/photos/129208/pexels-photo-129208.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb');
+  /* background-image: url('https://images.pexels.com/photos/129208/pexels-photo-129208.jpeg?'); */
+  background-image: url('https://images.pexels.com/photos/131174/nature-milky-way-stars-space-131174.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -295,7 +297,8 @@ a:hover, a:focus {
 /* SECTION
 /* --------------------- */
 .section {
-  background-color: #fafafa;
+  /* background-color: #fafafa; */
+  background-color: rgba(0, 0, 0, 0.9);
   padding: 70px 0;
 }
 .section.darker {
@@ -5663,7 +5666,7 @@ img.mfp-img {
 .work-item-filters {
   text-align: center;
   margin-bottom: 0;
-  background-color: #e2e2e2;
+  /* background-color: #e2e2e2; */
 }
 .work-item-filters li {
   padding: 0;
@@ -6137,4 +6140,11 @@ img.mfp-img {
   font-size: 0.8em;
   line-height: 36px;
   text-align: center;
+}
+
+#headShot img{
+  width: 200px;
+  border-radius: 100%;
+  margin-bottom: 20px;
+  border: 1px solid black;
 }
