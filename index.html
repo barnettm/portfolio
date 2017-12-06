@@ -9,13 +9,21 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta name="Matt Barnett" content="Portfolio">
 
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110854129-1"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-110854129-1');
+	</script>
+
 	<!-- Styles -->
 	<link href="assets/css/bootstrap.css" rel="stylesheet">
 	<link href="assets/css/font-awesome.min.css" rel="stylesheet">
 	<link href="assets/css/main.css" rel="stylesheet">
-
-	<!-- to be removed -->
-	<link rel="stylesheet" href="../demo-panel/demo-panel-style.css">
+	<!-- <link rel="stylesheet" type="" href="assets/css/skins/deepskyblue.css"> -->
 
 	<!-- Google Fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700' rel='stylesheet' type='text/css'>
@@ -40,7 +48,7 @@
 
 </head>
 <body id="top" class="fullscreen-image-background">
-
+<div id="particles-js"></div>
 	<!-- NAVBAR -->
 	<div class="navbar navbar-fixed-top">
 		<div class="container">
@@ -81,9 +89,10 @@
 								<h2 class="hero-heading"><span class="name">MATT BARNETT</span></h2>
 								<div data-looper="go" data-interval="3000" class="looper slide down">
 									<div class="looper-inner">
-										<div class="item animated"><p>WEB DEVELOPER</p></div>
-										<div class="item animated"><p>JAVASCRIPT DEVELOPER</div>
-										<div class="item animated"><p>REACT DEVELOPER</p></div>
+										<div class="item animated"><p>FRONT END WEB DEVELOPER</p></div>
+										<div class="item animated"><p>FRONT END WEB DEVELOPER</p></div>
+										<!-- <div class="item animated"><p>PASSIONATE GEEK</div>
+										<div class="item animated"><p>WEB DEVELOPER</p></div> -->
 										<!--<div class="item animated"><p>NODE.JS</div>-->
 									</div>
 								</div>
@@ -106,12 +115,15 @@
 		<div id="about" class="section about">
 			<div class="container">
 				<div class="section-heading">
+					<div id="headShot">
+						<img src="assets/img/matt_headshot.jpeg" alt="">
+					</div>
 					<h2>ABOUT ME</h2>
-					<p>Get to know me</p>
+					<!-- <p>Get to know me</p> -->
 					<hr />
 				</div>
 				<div class="section-content">
-					<p>Progressively maintain <a href="#">inexpensive information</a> without intuitive markets. Quickly reconceptualize 2.0 imperatives without next-generation meta-services. Professionally conceptualize plug-and-play metrics without orthogonal information. Appropriately strategize dynamic infrastructures and turnkey channels. Seamlessly synthesize high-quality total linkage without distinctive intellectual capital.</p>
+					<p>After discovering a passion for web development, I couldn't get enough. I used every resource available to learn development and design, and jumped on every opportunity to build or contribute to a project.  I love to learn new technologies, and believe that a passionate developer will bring unprecedented value to any project.</p>
 
 					<p>Completely reinvent business mindshare with superior strategic theme areas. Dramatically build reliable platforms without real-time e-tailers. Competently predominate covalent scenarios rather than future-proof content. Intrinsicly innovate holistic users whereas cost effective partnerships. Objectively transform collaborative outsourcing before an expanded array of services.
 
@@ -126,16 +138,15 @@
 			<div class="container">
 				<h2>Find me elsewhere in the web</h2>
 				<ul class="list-inline social-icon">
-					<li class="wow rollIn" data-wow-delay='0.3s'><a href="#" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-					<li class="wow rollIn" data-wow-delay='0.3s'><a href="#" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-					<li class="wow rollIn" data-wow-delay='0.3s'><a href="#" data-toggle="tooltip" data-placement="bottom" title="Dribbble"><i class="fa fa-dribbble"></i></a></li>
-					<li class="wow rollIn" data-wow-delay='0.3s'><a href="#" data-toggle="tooltip" data-placement="bottom" title="LinkedIn"><i class="fa fa-linkedin"></i></a></li>
+					<li class="wow rollIn" data-wow-delay='0.3s'><a href="https://www.github.com/barnettm" target='_blank' data-toggle="tooltip" data-placement="bottom" title="Github"><i class="fa fa-github"></i></a></li>
+					<li class="wow rollIn" data-wow-delay='0.3s'><a href="https://www.linkedin.com/in/codemattb" target = '_blank' data-toggle="tooltip" data-placement="bottom" title="LinkedIn"><i class="fa fa-linkedin"></i></a></li>
+					<li class="wow rollIn" data-wow-delay='0.3s'><a href="mailto:barnett717@gmail.com" target='_blank' data-toggle="tooltip" data-placement="bottom" title="Email"><i class="fa fa-envelope"></i></a></li>
+					
 				</ul>
 			</div>
 		</div>
 		<!-- END FULL-WIDTH PARALLAX -->
 
-		<!-- SKILLS CHART -->
 		<div id="skills" class="section skills">
 			<div class="container">
 				<div class="row">
@@ -158,10 +169,37 @@
 				</div>
 			</div>
 		</div>
+
+
+
+
+		<!-- SKILLS CHART -->
+		<!-- <div id="skills" class="section skills">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 text-center">
+						<div id="chart1" class="chart" data-percent="92"><span class="percent">92%</span></div>
+						<span class="skill-name">Front-End Design</span>
+					</div>
+					<div class="col-md-3 text-center">
+						<div id="chart2" class="chart" data-percent="80"><span class="percent">80%</span></div>
+						<span class="skill-name">Web Design</span>
+					</div>
+					<div class="col-md-3 text-center">
+						<div id="chart3" class="chart" data-percent="75"><span class="percent">75%</span></div>
+						<span class="skill-name">WordPress</span>
+					</div>
+					<div class="col-md-3 text-center">
+						<div id="chart4" class="chart" data-percent="65"><span class="percent">65%</span></div>
+						<span class="skill-name">PHP</span>
+					</div>
+				</div>
+			</div>
+		</div> -->
 		<!-- END SKILLS CHART -->
 
 		<!-- SERVICES -->
-		<div id="services" class="section darker services" >
+		<!-- <div id="services" class="section darker services" >
 			<div class="container">
 				<div class="section-heading">
 					<h2>SERVICES</h2>
@@ -213,7 +251,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 		<!-- END SERVICES -->
 
 		<!-- WORKS -->
@@ -352,18 +390,19 @@
 								<ul class="list-unstyled">
 									<li>
 										<i class="fa fa-map-marker pull-left"></i>
-										<h3>Address</h3>
-										<p>12345 North Main Street<br />New York, 22334455</p>
+										<h3>Location</h3>
+										<p>Orange County, Ca 
+											<!-- <br />New York, 22334455</p> -->
 									</li>
 									<li>
 										<i class="fa fa-envelope pull-left"></i>
 										<h3>Phone</h3>
-										<p>+621 234 4567</p>
+										<p id="myPhone">(949) 464-7353</p>
 									</li>
 									<li>
 										<i class="fa fa-user pull-left"></i>
 										<h3>Email</h3>
-										<p><a href="mailto:hello@yourdomain.com">hello@yourdomain.com</a></p>
+										<p><a href="mailto:barnett717@gmail.com">barnett717@gmail.com</a></p>
 									</li>
 								</ul>
 							</div>
@@ -448,6 +487,8 @@
 	<script src="assets/js/plugins/easypiechart/jquery.easypiechart.min.js"></script>
 	<script src="assets/js/plugins/magnific/jquery.magnific-popup.min.js"></script>
 	<script src="assets/js/plugins/looper/looper.min.js"></script>
+	<script src="assets/js/particles.js"></script>
+	<script src="assets/js/app.js"></script>
 	<script src="assets/js/loop.js"></script>
 
 	<!-- DEMO PANEL -->
