@@ -196,7 +196,6 @@ var pJS = function(tag_id, params){
     if(pJS && pJS.interactivity.events.resize){
 
       window.addEventListener('resize', function(){
-
           pJS.canvas.w = pJS.canvas.el.offsetWidth;
           pJS.canvas.h = pJS.canvas.el.offsetHeight;
 
@@ -1475,7 +1474,6 @@ function isInArray(value, array) {
 window.pJSDom = [];
 
 window.particlesJS = function(tag_id, params){
-
   //console.log(params);
 
   /* no string id? so it's object params, and set the id with default id */
@@ -1520,7 +1518,6 @@ window.particlesJS = function(tag_id, params){
 };
 
 window.particlesJS.load = function(tag_id, path_config_json, callback){
-debugger
   /* load json config */
   var xhr = new XMLHttpRequest();
   xhr.open('GET', path_config_json);
