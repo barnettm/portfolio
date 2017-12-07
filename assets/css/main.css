@@ -5,7 +5,7 @@ html, body {
 }
 
 #particles-js {
-  height: 50% !important;
+  height: 60% !important;
   width: 100%;
   position: absolute;
   z-index: 100;
@@ -25,7 +25,8 @@ body {
 body.fullscreen-image-background {
   /*background-image: url('../img/sliders/slider1.jpg?1394417052');*/
   /* background-image: url('https://images.pexels.com/photos/129208/pexels-photo-129208.jpeg?'); */
-  background-image: url('https://images.pexels.com/photos/131174/nature-milky-way-stars-space-131174.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb');
+  /* background-image: url('https://images.pexels.com/photos/131174/nature-milky-way-stars-space-131174.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb'); */
+  background-image: url('https://images.pexels.com/photos/540518/pexels-photo-540518.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
