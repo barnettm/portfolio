@@ -157,7 +157,7 @@ jQuery(function ($) {
 		lang: "en"
 	};
 
-	twitterFetcher.fetch(configProfile);
+	// twitterFetcher.fetch(configProfile);
 
 
 	/*----------------------/
