@@ -538,10 +538,15 @@ jQuery(function ($) {
 	  })
 
 
-
+	  createContactInfo();
 
 
 
 });
+
+function createContactInfo(){
+	$("#myPhone").text("(949) 464-7353");
+	$("#myEmail>a").text("barnett717@gmail.com")
+}
 
 

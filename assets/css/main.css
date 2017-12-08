@@ -5,12 +5,19 @@ html, body {
 }
 
 #particles-js {
-  height: 60% !important;
+  height: 55% !important;
   width: 100%;
   position: absolute;
   z-index: 50;
   /* position: absolute; */
   /* background-color: black; */
+}
+
+.skills img{
+  width: 65px;
+  height: 65px;
+  margin-bottom: 10px;
+  margin-top: 30px;
 }
 
 body {
@@ -26,7 +33,7 @@ body.fullscreen-image-background {
   /*background-image: url('../img/sliders/slider1.jpg?1394417052');*/
   /* background-image: url('https://images.pexels.com/photos/129208/pexels-photo-129208.jpeg?'); */
   /* background-image: url('https://images.pexels.com/photos/131174/nature-milky-way-stars-space-131174.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb'); */
-  background-image: url('https://images.pexels.com/photos/540518/pexels-photo-540518.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb');
+  background-image: url("../img/background_2_50.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -5302,7 +5309,7 @@ img.mfp-img {
   }
 }
 .hero-unit .hero-content .hero-buttons {
-  z-index: 200;
+  z-index: 2000 !important;
 }
 .hero-unit .hero-content .hero-buttons .btn {
   margin: 0 5px;
