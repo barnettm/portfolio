@@ -22,7 +22,8 @@ a {
   }
   
   .section-heading h2 {
-    color: #3D4751;
+    /* color: #3D4751; */
+    color: #337ab7;
   }
   
   .service-item .service-icon,
