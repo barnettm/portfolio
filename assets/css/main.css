@@ -5565,13 +5565,21 @@ img.mfp-img {
 }
 
 #quote-banner{
-  background-image: url('https://images.pexels.com/photos/66997/pexels-photo-66997.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb');
+  background-color: rgba(0, 0, 0, 0.1);
+  /* background-image: url('https://images.pexels.com/photos/417122/pexels-photo-417122.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb'); */
   text-align: center;
 }
 
 #quote-banner h2 {
   color: #fff;
   font-size: 3em;
+}
+
+.fa-quote-left{
+  margin-right: 77%;
+}
+.fa-quote-right{
+  margin-left: 77%;
 }
 
 /* ------------------ SERVICES ------------------ */
