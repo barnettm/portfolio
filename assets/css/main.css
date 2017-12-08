@@ -26,9 +26,10 @@ body {
   font-size: 16px;
   font-weight: 300;
   /* color: #777; */
-  color: #f7f7f7;
+  color: #e5e5e5;
   background-color: #fff !important;
-  line-height: 1.6;
+  /* line-height: 1.6; */
+  line-height: 2.0;
 }
 body.fullscreen-image-background {
   /*background-image: url('../img/sliders/slider1.jpg?1394417052');*/
