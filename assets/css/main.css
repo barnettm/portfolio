@@ -39,7 +39,7 @@ body.fullscreen-image-background {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
 }
 @media screen and (min-width: 1025px) {
   body.fullscreen-image-background {
