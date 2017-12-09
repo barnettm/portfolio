@@ -5254,13 +5254,13 @@ img.mfp-img {
   .hero-unit .hero-content {
     text-align: center;
     /* margin-top: -100px; */
-    z-index: 2000;
+    z-index: 100;
   }
 }
 @media screen and (min-width: 321px) and (max-width: 480px) {
   .hero-unit .hero-content {
     /* margin-top: -40px; */
-    z-index: 2000;
+    z-index: 100;
   }
 }
 @media screen and (max-width: 320px) {
