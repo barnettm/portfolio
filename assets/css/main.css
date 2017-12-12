@@ -397,7 +397,7 @@ a:hover, a:focus {
   list-style-type: none;
 }
 .parsley-error-list li {
-  font-size: 12px;
+  font-size: 16px;
   color: #d2322d;
 }
 
