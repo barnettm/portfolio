@@ -5467,7 +5467,9 @@ img.mfp-img {
 /* SOCIAL NETWORK
 /* --------------------- */
 #social-network {
-  background-image: url('../img/sky.jpg?1394021998');
+  /* background-image: url('../img/sky.jpg?1394021998'); */
+  /* background-image: url("https://images.pexels.com/photos/119564/pexels-photo-119564.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb"); */
+  background-image: url("https://images.pexels.com/photos/552785/pexels-photo-552785.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
   text-align: center;
 }
 #social-network h2 {
