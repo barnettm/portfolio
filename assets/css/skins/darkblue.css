@@ -59,4 +59,10 @@ a {
   .chart .percent {
     color: #3D4751;
   }
+
+  @media screen and (max-width: 400px) {
+    .hero-buttons{
+      margin-top: 30px;
+    }
+  }
   
