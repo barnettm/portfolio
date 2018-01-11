@@ -92,5 +92,13 @@ a {
     .hero-buttons{
       margin-top: 30px;
     }
+
+  }
+
+  @media screen and (max-width: 519px){
+    .contact-info > ul > li:nth-child(2){
+      margin-left: 40px;
+      margin-right: 0px;
+    }
   }
   
