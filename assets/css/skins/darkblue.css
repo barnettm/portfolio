@@ -60,6 +60,19 @@ a {
     color: #3D4751;
   }
 
+  .btn-link{
+    margin: 5px;
+    background-color: rgb(53, 50, 50);
+    color: white;
+    border: 2px solid rgb(53, 50, 50);
+    border-radius: 2px;
+  }
+  .btn-link:hover{
+    margin: 5px;
+    background-color: #569988;
+    color: white;
+  }
+
 
   @media screen and (max-width: 1224px){
     .contact-info > ul {

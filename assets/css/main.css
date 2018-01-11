@@ -5834,7 +5834,8 @@ img.mfp-img {
     height: 30%;
   }
 }
-.work-item-list .image-overlay a {
+/* .work-item-list  {  .image-overlay a */
+  .work-item-list{
   position: absolute;
   top: 0;
   left: 0;
