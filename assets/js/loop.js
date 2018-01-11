@@ -545,7 +545,7 @@ jQuery(function ($) {
 });
 
 function createContactInfo(){
-	$("#myPhone").text("(949) 464-7353");
+	$("#myPhone>a").text("(949) 464-7353");
 	$("#myEmail>a").text("mattbarnettdev@gmail.com")
 }
 

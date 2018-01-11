@@ -60,6 +60,21 @@ a {
     color: #3D4751;
   }
 
+
+  @media screen and (max-width: 1224px){
+    .contact-info > ul {
+      text-align: center;
+    }
+    .contact-info > ul > li{
+      display: inline-block;
+      text-align: center;
+    }
+    .contact-info > ul > li:nth-child(2){
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+  }
+
   @media screen and (max-width: 400px) {
     .hero-buttons{
       margin-top: 30px;
