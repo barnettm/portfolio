@@ -80,6 +80,13 @@ a {
     margin-right: 100px !important;
     margin-bottom: 100px;
   }
+  .about{
+    font-size: 18px;
+  }
+  .bio{
+    margin-bottom: 3%;
+  }
+
 
 
 
@@ -118,6 +125,9 @@ a {
   @media screen and (max-width: 1025px){
     .col-xs-offset-1{
       margin-left: 0%;
+    }
+    .work-item-list li{
+      margin: 2px;
     }
   }
   

@@ -2,6 +2,7 @@
 html, body {
   height: 100%;
   width: 100%;
+  user-select: none;
 }
 
 #particles-js {
@@ -5515,7 +5516,8 @@ img.mfp-img {
 }
 .social-icon li a:hover {
   background-color: #fff;
-  color: #00aeef;
+  /* color: #00aeef; */
+  color: #5D8D89;
 }
 @media screen and (max-width: 480px) {
   .social-icon {
@@ -5789,7 +5791,7 @@ img.mfp-img {
 }
 @media screen and (min-width: 548px) and (max-width: 1024px) {
   .work-item-list.list-col-2 li, .work-item-list.list-col-3 li, .work-item-list.list-col-4 li, .work-item-list.list-col-5 li {
-    width: 49.90%;
+    width: 48.90%;
   }
 }
 .work-item-list .media-popup > i {
