@@ -65,14 +65,22 @@ a {
     background-color: rgb(53, 50, 50);
     color: white;
     border: 2px solid rgb(53, 50, 50);
-    border-radius: 2px;
+    border-radius: 4px;
+    width: 25%;
+    font-family: "Open Sans", sans-serif;
   }
   .btn-link:hover{
     margin: 5px;
     background-color: #569988;
     color: white;
     text-decoration: none;
+    
   }
+  .projects{
+    margin-right: 100px !important;
+    margin-bottom: 100px;
+  }
+
 
 
   @media screen and (max-width: 1224px){
@@ -100,6 +108,16 @@ a {
     .contact-info > ul > li:nth-child(2){
       margin-left: 40px;
       margin-right: 0px;
+    }
+  }
+  @media screen and (min-width: 1025px){
+    .col-xs-offset-1{
+      margin-left: 11.333333%;
+    }
+  }
+  @media screen and (max-width: 1025px){
+    .col-xs-offset-1{
+      margin-left: 0%;
     }
   }
   
