@@ -89,6 +89,27 @@ a {
     margin-bottom: 3%;
   }
 
+  .btn-primary.disabled, .btn-primary[disabled] {
+    background-color: #5D8D89 !important;
+    border-color: #5D8D89 !important;
+}
+#social-network {
+  padding: 50px 0;
+}
+
+#contact {
+  padding-bottom: 200px;
+}
+
+
+/* .work-item {
+  height: 250px;
+} */
+
+
+
+
+
 
 
 

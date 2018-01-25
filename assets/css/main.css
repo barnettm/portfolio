@@ -5471,6 +5471,7 @@ img.mfp-img {
   /* background-image: url('../img/sky.jpg?1394021998'); */
   /* background-image: url("https://images.pexels.com/photos/119564/pexels-photo-119564.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb"); */
   background-image: url("https://images.pexels.com/photos/289367/pexels-photo-289367.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
+  /* background-image: url("https://images.unsplash.com/photo-1429153243204-48d8e868f40d?auto=format&fit=crop&w=3100&q=80"); */
   text-align: center;
   /* background-size: 50%; */
 }
@@ -5999,6 +6000,9 @@ img.mfp-img {
 /* --------------------- */
 /* CONTACT INFO
 /* --------------------- */
+
+
+
 .contact-info li {
   padding-bottom: 30px;
 }

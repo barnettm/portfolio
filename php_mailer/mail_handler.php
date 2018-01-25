@@ -3,7 +3,7 @@
 require_once('email_config.php');
 require('phpmailer/PHPMailer/PHPMailerAutoload.php');
 $mail = new PHPMailer;
-// $mail->SMTPDebug = 3;   // Enable verbose debug output. Change to 0 to disable debugging output.
+$mail->SMTPDebug = 3;   // Enable verbose debug output. Change to 0 to disable debugging output.
 
 $message = [];
 $output = [
