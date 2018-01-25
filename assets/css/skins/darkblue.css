@@ -3,91 +3,112 @@ a {
     /* color: #3D4751; */
     /* color: #e5e5e5; */
     color: #4398D5
-  }
-  a:hover, a:focus {
-    /* color: #3D4751; */
-    color: #4398D5;
-  }
-  
-  .btn-primary {
-    background-color: #3D4751;
-    border-color: #3D4751;
-  }
-  .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
-    background-color: #3D4751;
-    border-color: #3D4751;
-  }
-  .btn-primary:active:focus, .btn-primary.active:focus {
-    background-color: #3D4751;
-    border-color: #3D4751;
-  }
-  
-  .section-heading h2 {
-    /* color: #3D4751; */
-    /* color: #337ab7; */
-    color: #5D8D89;
-  }
-  
-  .service-item .service-icon,
-  .service-item .service-text a.read-more {
-    color: #3D4751;
-  }
-  
-  .work-item-filters li a:hover,
-  .work-item-filters li a.active {
-    background-color: #3D4751;
-  }
-  
-  .work-item-list .image-overlay {
-    background-color: rgba(82, 82, 82, 0.9);
-  }
-  
-  .team-member .team-name {
-    background-color: #3D4751;
-  }
-  
-  .twitter-stream {
-    background-color: #3D4751;
-  }
-  .twitter-stream .twitter-icon {
-    background-color: #3D4751;
-  }
-  .twitter-stream .twitter-icon i {
-    color: #3D4751;
-  }
-  
-  .chart .percent {
-    color: #3D4751;
-  }
+}
+a:hover, a:focus {
+  /* color: #3D4751; */
+  color: #4398D5;
+}
 
-  .btn-link{
-    margin: 5px;
-    background-color: rgb(53, 50, 50);
-    color: white;
-    border: 2px solid rgb(53, 50, 50);
-    border-radius: 4px;
-    width: 25%;
-    font-family: "Open Sans", sans-serif;
-  }
-  .btn-link:hover{
-    margin: 5px;
-    background-color: #569988;
-    color: white;
-    text-decoration: none;
-    /* transform: translateY(-3px); */
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-    
-  }
-  .projects{
-    margin-right: 100px !important;
-    margin-bottom: 100px;
-  }
-  .about{
-    font-size: 18px;
-  }
-  .bio{
-    margin-bottom: 3%;
-  }
+.btn-primary {
+  background-color: #3D4751;
+  border-color: #3D4751;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
+  background-color: #3D4751;
+  border-color: #3D4751;
+}
+.btn-primary:active:focus, .btn-primary.active:focus {
+  background-color: #3D4751;
+  border-color: #3D4751;
+}
+
+.section-heading h2 {
+  /* color: #3D4751; */
+  /* color: #337ab7; */
+  color: #5D8D89;
+}
+
+.service-item .service-icon,
+.service-item .service-text a.read-more {
+  color: #3D4751;
+}
+
+.work-item-filters li a:hover,
+.work-item-filters li a.active {
+  background-color: #3D4751;
+}
+
+.work-item-list .image-overlay {
+  background-color: rgba(82, 82, 82, 0.9);
+}
+
+.team-member .team-name {
+  background-color: #3D4751;
+}
+
+.twitter-stream {
+  background-color: #3D4751;
+}
+.twitter-stream .twitter-icon {
+  background-color: #3D4751;
+}
+.twitter-stream .twitter-icon i {
+  color: #3D4751;
+}
+
+.chart .percent {
+  color: #3D4751;
+}
+
+.btn-link{
+  margin: 5px;
+  background-color: rgb(53, 50, 50);
+  color: white;
+  border: 2px solid rgb(53, 50, 50);
+  border-radius: 4px;
+  width: 25%;
+  font-family: "Open Sans", sans-serif;
+}
+.btn-link:hover{
+  margin: 5px;
+  background-color: #569988;
+  color: white;
+  text-decoration: none;
+  /* transform: translateY(-3px); */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  
+}
+.projects{
+  margin-right: 100px !important;
+  margin-bottom: 100px;
+}
+.about{
+  font-size: 18px;
+}
+.bio{
+  margin-bottom: 3%;
+}
+
+.btn-primary.disabled, .btn-primary[disabled] {
+  background-color: #5D8D89 !important;
+  border-color: #5D8D89 !important;
+}
+#social-network {
+  padding: 50px 0;
+}
+
+#contact {
+  padding-bottom: 200px;
+}
+
+
+.work-item {
+  max-height: 350px;
+}
+
+
+
+
 
 
 
