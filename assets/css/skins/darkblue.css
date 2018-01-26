@@ -10,16 +10,16 @@ a:hover, a:focus {
 }
 
 .btn-primary {
-  background-color: #3D4751;
-  border-color: #3D4751;
+  background-color: #3D4751 !important;
+  border-color: #3D4751 !important;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
-  background-color: #3D4751;
-  border-color: #3D4751;
+  background-color: #3D4751 !important;
+  border-color: #3D4751 !important;
 }
 .btn-primary:active:focus, .btn-primary.active:focus {
-  background-color: #3D4751;
-  border-color: #3D4751;
+  background-color: #3D4751 !important;
+  border-color: #3d4751 !important;
 }
 
 .section-heading h2 {
@@ -96,18 +96,13 @@ a:hover, a:focus {
 #social-network {
   padding: 50px 0;
 }
-
 #contact {
-  padding-bottom: 200px;
+  padding-bottom: 150px;
 }
-
 
 .work-item {
   max-height: 350px;
 }
-
-
-
 
 
 

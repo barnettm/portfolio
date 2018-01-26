@@ -287,7 +287,7 @@ jQuery(function ($) {
 			if ($message.success == true) {
 				$theForm.slideUp('medium', function () {
 					$alert.removeClass('alert-danger');
-					$alert.addClass('alert-success').html("Thank you. We will contact you soon").slideDown('medium');
+					$alert.addClass('alert-success').html("Thank you. I will contact you soon").slideDown('medium');
 				});
 			} else {
 				$alert.addClass('alert-danger').html("Please check your information and try again").slideDown('medium');
@@ -299,7 +299,12 @@ jQuery(function ($) {
 		})
 			.fail(function () { console.log('AJAX Error'); });
 
+			//added to run test on local machine
+			$btn.find('.loading-icon').removeClass('fa-spinner fa-spin ');
+			$btn.prop('disabled', false).find('span').text($btnText);
+
 	});
+
 
 
 	// init scrollspy except on Opera, it doesn't work because body has 100% height
