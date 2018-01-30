@@ -64,7 +64,7 @@
 			left: 0,
 			width: '100%',
 			height: '100%',
-			zIndex: 9999999
+			zIndex: 9999999,
 		})
 		.appendTo('body');
 		
