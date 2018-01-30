@@ -2,11 +2,12 @@
 a {
     /* color: #3D4751; */
     /* color: #e5e5e5; */
-    color: #4398D5
+    color: #4398D5;
 }
 a:hover, a:focus {
   /* color: #3D4751; */
   color: #4398D5;
+
 }
 
 .btn-primary {
@@ -34,9 +35,12 @@ a:hover, a:focus {
 }
 
 .work-item-filters li a:hover,
-.work-item-filters li a.active {
+.work-item-filters li a.active,
+.work-item-filters li a.visited {
   background-color: #3D4751;
+
 }
+
 
 .work-item-list .image-overlay {
   background-color: rgba(82, 82, 82, 0.9);
@@ -68,16 +72,20 @@ a:hover, a:focus {
   border-radius: 4px;
   width: 25%;
   font-family: "Open Sans", sans-serif;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.4);
+}
+.btn-link:focus, .btn-link:visited{
+  background-color: rgb(53, 50, 50);
+  color: white;
+  text-decoration: none;
 }
 .btn-link:hover{
   margin: 5px;
   background-color: #569988;
   color: white;
   text-decoration: none;
-  /* transform: translateY(-3px); */
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-  
 }
+
 .projects{
   margin-right: 100px !important;
   margin-bottom: 100px;
@@ -100,8 +108,11 @@ a:hover, a:focus {
   padding-bottom: 150px;
 }
 
-.work-item {
-  /* max-height: 350px; */
+.work-item-info {
+  transition: all .4s;
+}
+.work-item-info a {
+  color: white;
 }
 
 
