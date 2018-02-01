@@ -159,13 +159,13 @@
 	var loadImg = function(url) {
 		var imgLoad = new Image();
 		$(imgLoad)
-		.load(function() {
+		.on("load",(function() {
 			completeLoading();
-		})
-		.error(function() {
+		}))
+		.on("error",(function() {
 			errors.push($(this).attr('src'));
 			completeLoading();
-		})
+		}))
 		.attr('src', url);
 	}
 	

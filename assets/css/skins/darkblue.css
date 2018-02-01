@@ -37,8 +37,8 @@ a:hover, a:focus {
 .work-item-filters li a:hover,
 .work-item-filters li a.active,
 .work-item-filters li a.visited {
-  background-color: #3D4751;
-
+  /* background-color: #3D4751; */
+  background-color: rgba(0,0,0,.9);
 }
 
 
