@@ -112,7 +112,12 @@ a:hover, a:focus {
   transition: all .4s;
 }
 .work-item-info a {
-  color: white;
+  color: rgb(241, 241, 241);
+}
+
+h4 {
+  /* color: #f7f7f7; */
+  color: #5D8D89;
 }
 
 
