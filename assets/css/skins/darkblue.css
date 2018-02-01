@@ -37,13 +37,14 @@ a:hover, a:focus {
 .work-item-filters li a:hover,
 .work-item-filters li a.active,
 .work-item-filters li a.visited {
-  /* background-color: #3D4751; */
-  background-color: rgba(0,0,0,.9);
+  background-color: #3D4751;
+  
 }
 
 
 .work-item-list .image-overlay {
-  background-color: rgba(82, 82, 82, 0.9);
+  /* background-color: rgba(82, 82, 82, 0.9); */
+  background-color: rgba(0,0,0,.9);
 }
 
 .team-member .team-name {
