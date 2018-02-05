@@ -143,7 +143,12 @@ h4 {
     .hero-buttons{
       margin-top: 30px;
     }
+  }
 
+  @media screen and (min-width: 400px) and (max-width: 500px) {
+    .hero-buttons{
+      margin-top: 3rem;
+    }
   }
 
   @media screen and (max-width: 519px){
