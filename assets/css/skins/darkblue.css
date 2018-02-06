@@ -120,6 +120,11 @@ h4 {
   color: #9a9a9a;
 }
 
+#skills, #social-network, #works {
+  user-select: none;
+}
+
+
 
 
 
