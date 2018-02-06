@@ -167,6 +167,7 @@ body #jpreBar {
 .navbar-nav.nav-text-light > li > a:hover {
   border-bottom-color: #fff;
 }
+
 .navbar-nav.nav-text-light > li.active > a {
   border-bottom-color: #fff;
 }
