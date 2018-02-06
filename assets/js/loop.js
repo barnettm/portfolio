@@ -300,8 +300,8 @@ jQuery(function ($) {
 			.fail(function () { console.log('AJAX Error'); });
 
 			//added to run test on local machine
-			$btn.find('.loading-icon').removeClass('fa-spinner fa-spin ');
-			$btn.prop('disabled', false).find('span').text($btnText);
+			// $btn.find('.loading-icon').removeClass('fa-spinner fa-spin ');
+			// $btn.prop('disabled', false).find('span').text($btnText);
 
 	});
 
