@@ -69,7 +69,7 @@ a:hover, a:focus {
   margin: 5px;
   background-color: rgb(53, 50, 50);
   color: white;
-  border: 2px solid rgb(53, 50, 50);
+  /* border: 2px solid rgb(53, 50, 50); */
   border-radius: 4px;
   width: 25%;
   font-family: "Open Sans", sans-serif;
