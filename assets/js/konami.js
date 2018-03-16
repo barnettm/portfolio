@@ -1,4 +1,4 @@
-const particles_one = {
+const particles_one = {  //star effect
     "particles": {
       "number": {
         "value": 468,
@@ -110,7 +110,7 @@ const particles_one = {
   } 
 
 
-const particles_two = 
+const particles_two = // 3d particle effect
 {
     "particles": {
       "number": {
@@ -223,29 +223,23 @@ const particles_two =
   }
     
 
-var particles = true;
-const pressed = [];
-
+var particles = true; // flag to toggle shapes
+const pressed = []; // holds keystrokes
 const secretCode = 'matt'
+
 // const secretCode = 'ArrowUpArrowUpArrowDownArrowDownArrowLeftArrowRightArrowLeftArrowRightba'
 window.addEventListener('keyup', (e) => {
-console.log(e.key);
 pressed.push(e.key)
-pressed.splice(-secretCode.length -1, pressed.length - secretCode.length);
-console.log(pressed)
+pressed.splice(-secretCode.length -1, pressed.length - secretCode.length); // trim array to size of secretCode
 
 if(pressed.join('').includes(secretCode) && particles == true){
- console.log(particles)
-     particles = !particles
-     console.log(particles)
-     particlesJS('particles-js', particles_two)
+     particles = !particles  // toggle flag
+     particlesJS('particles-js', particles_two)  // initate new canvas
     }else if(pressed.join('').includes(secretCode)&& particles == false){
     console.log(particles)
         particles = !particles
-        console.log(particles)
         particlesJS('particles-js', particles_one)
         }
-        pJSDom = pJSDom.slice(1,2)
-
-console.log(pJSDom)
+        pJSDom = pJSDom.slice(1,2)  // trim particle canvas array to one item
 })
+
