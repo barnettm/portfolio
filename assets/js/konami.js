@@ -236,7 +236,6 @@ if(pressed.join('').includes(secretCode) && particles == true){
      particles = !particles  // toggle flag
      particlesJS('particles-js', particles_two)  // initate new canvas
     }else if(pressed.join('').includes(secretCode)&& particles == false){
-    console.log(particles)
         particles = !particles
         particlesJS('particles-js', particles_one)
         }
