@@ -4,3 +4,10 @@
 .wow {
 	visibility: visible;
 }
+
+
+.btn-primary {
+	background-color: #3D4751 !important;
+	border-color: #3D4751 !important;
+  }
+  
