@@ -320,6 +320,7 @@ jQuery(function ($) {
 		
 	particlesJS('particles-js', particles_one)
 	  createContactInfo();
+	  getFooterText()
 
 
 
@@ -328,6 +329,12 @@ jQuery(function ($) {
 function createContactInfo(){
 	$("#myPhone>a").text("(949) 464-7353");
 	$("#myEmail>a").text("mattbarnettdev@gmail.com")
+}
+
+const getFooterText = () => {
+	const year = new Date().getFullYear();
+	const text = `${year}. Matt Barnett. All Rights Reserved.`
+	$(".copyright").text(text)
 }
 
 
