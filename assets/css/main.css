@@ -6151,6 +6151,10 @@ img.mfp-img {
   padding-bottom: 10px;
 }
 
+#footer > .container {
+  text-align: center;
+}
+
 .back-to-top {
   display: none;
   position: fixed;
